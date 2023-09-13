@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+background-color: aqua;
+
+}
+
+.menu_button {
+ color: black;
+ border: none;
+ border-radius: 6px;
+ padding: 3px;
+ background-color: #003a58;
+
+}
+
+.menu_button:hover {
+    background-color: #003a58;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.menu_button_position {
+    position: absolute;
+    top: 4%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #00537f;
+    height: 8vh;
+}
