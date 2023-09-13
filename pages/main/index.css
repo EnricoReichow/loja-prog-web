@@ -1,8 +1,6 @@
 
 html {
-    display: flex;
     background-color: #2fabcc;
-    justify-content: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -41,6 +39,11 @@ html {
     text-align: center;
     width: 670px;
     color: white;
+}
+
+#logo-image {
+    width: 350px;
+    height: 350px;
 }
 
 .btn {
