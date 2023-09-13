@@ -14,7 +14,7 @@ function verificarLogin() {
 
         if (senhasNoBanco[index] === senha) {
 
-            window.location.assign("http://pt.stackoverflow.com");
+            window.location.assign("../main/index.html");
 
         } else {
 

@@ -1,0 +1,62 @@
+
+html {
+    display: flex;
+    background-color: #2fabcc;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    width: 1000px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#store-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#slogan-paragraph {
+    font-size: 25px;
+    text-align: center;
+    width: 670px;
+    color: white;
+}
+
+.btn {
+    height: 70px;
+    width: 400px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #2991ae;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: background-color 1.0s ease;
+}
+
+.btn:hover{
+    background-color: rgb(174, 217, 255);
+    color: black;
+    border-radius: 25px;
+    width: 450px;
+}
