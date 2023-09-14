@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="../../img/logo-faria-limer-icon.png">
-    <title>Carrinho | Faria Limer Store</title>
+    <title>Produtos | Faria Limer Store</title>
 </head>
 
 <body>
@@ -18,13 +18,26 @@
                     <input type="text" id="search_product" placeholder="Buscar produto">
                 </div>
                 <div id="right_nav">
-                    <a href="" class="menu_button_position">
-                        <button id="menu_button">MENU</button>
-                    </a>
+                    <button id="menu_button_style">MENU</button>
                 </div>
             </div>
         </nav>
     </header>
+    <div id="menu" class="menu">
+        <ul>
+            <a href="../main/index.html">
+                <li> Home </li>
+            </a>
+            <a href="../cart/index.html">
+                <li> Carrinho </li>
+            </a>
+            <a href="#">
+                <li> Finalizar Compra </li>
+            </a>
+            <button id="fechar_menu"> ✖ </button>
+        </ul>
+    </div>
+    <script defer src="../../js/menu.js"></script>
 </body>
 
 </html>
