@@ -58,6 +58,8 @@ nav {
 #search_product {
     height: 35px;
     width: 200px;
+    border-radius: 20px;
+    text-indent: 10px;
 }
 
 #menu_button {

@@ -1,8 +1,31 @@
+/*        HTML        */
 
 html {
     background-color: #2fabcc;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+/*        CLASS       */
+
+.btn {
+    height: 70px;
+    width: 400px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #2991ae;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: background-color 1.0s ease;
+}
+
+.btn:hover {
+    background-color: rgb(174, 217, 255);
+    color: black;
+    border-radius: 25px;
+    width: 450px;
+}
+
+/*         ID         */
 
 #main-container {
     display: flex;
@@ -44,22 +67,4 @@ html {
 #logo-image {
     width: 350px;
     height: 350px;
-}
-
-.btn {
-    height: 70px;
-    width: 400px;
-    font-size: 20px;
-    border-radius: 5px;
-    background-color: #2991ae;
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    transition: background-color 1.0s ease;
-}
-
-.btn:hover{
-    background-color: rgb(174, 217, 255);
-    color: black;
-    border-radius: 25px;
-    width: 450px;
 }
