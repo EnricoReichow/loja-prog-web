@@ -1,12 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
 body {
 
-background-color: aqua;
+background-color: white;
 
 }
 
@@ -14,29 +15,50 @@ background-color: aqua;
  color: black;
  border: none;
  border-radius: 6px;
- padding: 3px;
- background-color: #003a58;
+ padding: 5px;
+ background-color: #005d8b;
 
 }
 
 .menu_button:hover {
-    background-color: #003a58;
-    padding-left: 6px;
-    padding-right: 6px;
+    background-color: #d8f6ff;
+    color: rgb(0, 0, 0);
+    transition: background-color 1.0s ease;
+
 }
 
-.menu_button_position {
+/* .menu_button_position {
     position: absolute;
     top: 4%;
     left: 90%;
     transform: translate(-50%,-50%);
-}
+} */
 
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    background: #00537f;
+    background: #006ba5;
     height: 8vh;
+}
+
+.logo-img {
+    height: 50px;
+    width: 100px;
+}
+
+#container_nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90vw;
+    align-items: center;
+}
+
+#left_nav {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
 }
