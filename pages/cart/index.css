@@ -7,7 +7,7 @@
 
 body {
 
-    background-color: white;
+    background-color: rgb(151, 151, 151);
 
 }
 
@@ -150,4 +150,16 @@ nav {
 
 #fechar_menu:hover {
     background-color: #3a8e60;
+}
+
+.layout_itens {
+    color: black;
+    background-color: #c1c1c1;
+    display: flex;
+    margin-top: 10%;
+    margin-left: 4%;
+    margin-right: 40%;
+    border-radius: 7%;
+    font-size: small;
+    z-index: 2;
 }
