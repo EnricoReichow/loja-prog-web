@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const fecharMenuButton = document.getElementById("fechar_menu");
 
     menuButton.addEventListener("click", function () {
-        menu.style.right = "0"; // Mostra o menu deslizando da direita para a esquerda
+        menu.style.right = "0"; 
     });
 
     fecharMenuButton.addEventListener("click", function () {
-        menu.style.right = "-300px"; // Oculta o menu deslizando da esquerda para a direita
+        menu.style.right = "-300px";
     });
 });

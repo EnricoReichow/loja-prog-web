@@ -1,7 +1,7 @@
 /*        HTML        */
 
 html {
-    background-color: #2fabcc;
+    background-color: #01641d;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -11,15 +11,16 @@ html {
     height: 70px;
     width: 400px;
     font-size: 20px;
-    border-radius: 5px;
-    background-color: #2991ae;
+    border-radius: 7px;
+    background-color: #009e2d;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     transition: background-color 1.0s ease;
+    border: 3px solid #004617;
 }
 
 .btn:hover {
-    background-color: rgb(174, 217, 255);
+    background-color: rgb(118, 255, 159);
     color: black;
     border-radius: 25px;
     width: 450px;

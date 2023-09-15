@@ -19,11 +19,11 @@ nav {
     justify-content: space-around;
     align-items: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: #2fabcc;
+    background: #01641d;
     /*#006ba5;*/
     height: 10vh;
     z-index: 1000;
-    box-shadow: 0px 0px 10px #3dd5ff;
+    box-shadow: 0px 0px 20px #00b330;
 }
 
 /*        CLASS       */
@@ -38,60 +38,13 @@ nav {
     width: 100px;
 }
 
-/*         ID         */
-
-#container_nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 95vw;
-    align-items: center;
-}
-
-#left_nav {
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
-    align-items: center;
-}
-
-#search_product {
-    height: 35px;
-    width: 200px;
-    border-radius: 20px;
-    text-indent: 10px;
-    border: 5px solid #0184b4;
-}
-
-#search_product:focus {
-    outline: none;
-}
-
-#menu_button_style {
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 6px;
-    padding: 5px;
-    background-color: #005d8b;
-    height: 50px;
-    width: 120px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-}
-
-#menu_button_style:hover {
-    background-color: #d8f6ff;
-    color: rgb(0, 0, 0);
-    transition: background-color 0.5s ease;
-}
-
 .menu {
     position: fixed;
     top: 0vh;
     right: -300px; /* Inicialmente, o menu estará oculto */
     width: 15vw;
     height: 26vh;
-    background-color: #005d8b;
+    background-color: #008225;  
     z-index: 1001; /* Um valor maior que o z-index do nav para sobrepor */
     transition: right 0.3s ease-in-out;
     display: flex;
@@ -118,10 +71,11 @@ nav {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    transition: background-color 0.1s ease;
 }
 
 .menu li:hover {
-    background-color: #00496e;
+    background-color: #3a8e60;
 }
 
 .menu a {
@@ -130,8 +84,58 @@ nav {
     font-size: 18px;
 }
 
+/*         ID         */
+
+#container_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95vw;
+    align-items: center;
+}
+
+#left_nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+}
+
+#search_product {
+    height: 35px;
+    width: 200px;
+    border-radius: 20px;
+    text-indent: 10px;
+    border: 5px solid #008225;
+
+}
+
+#search_product:focus {
+    outline: none;
+}
+
+#menu_button_style {
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: #008225;
+    height: 50px;
+    width: 120px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+#menu_button_style:hover {
+    background-color: #3a8e60;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+
+
 #fechar_menu {
-    background-color: #005d8b;
+    background-color: #008225;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -139,8 +143,9 @@ nav {
     height: 5vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
+    transition: background-color 0.1s ease;
 }
 
 #fechar_menu:hover {
-    background-color: #00496e;
+    background-color: #3a8e60;
 }
