@@ -7,7 +7,7 @@
 
 body {
 
-    background-color: rgb(151, 151, 151);
+    background-color: #c1c1c1;
 
 }
 
@@ -154,12 +154,43 @@ nav {
 
 .layout_itens {
     color: black;
-    background-color: #c1c1c1;
+    background-color: white;
     display: flex;
     margin-top: 10%;
     margin-left: 4%;
     margin-right: 40%;
-    border-radius: 7%;
+    font-size: small;
+    z-index: 2;
+}
+
+.imagem {
+    width: 400px;
+    height: 300px;
+}
+
+.botao {
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #008225;
+    color: black;
+    border: none;
+    height: 30px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.cart_description{
+    margin-left: 4%;
+    margin-right: 40%;
+
+}
+
+.white_bar{
+    color: black;
+    background-color: white;
+    display: flex;
+    margin-left: 4%;
+    margin-right: 40%;
     font-size: small;
     z-index: 2;
 }
