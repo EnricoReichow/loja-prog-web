@@ -8,6 +8,7 @@
 html{
     scroll-behavior: smooth;
     font-size: 62.5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -34,6 +35,12 @@ nav {
     height: 10vh;
     z-index: 1000;
     box-shadow: 0px 0px 20px #00b330;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
 }
 
 /*        CLASS       */
@@ -97,6 +104,66 @@ nav {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
+}
+
+.layout_itens {
+    justify-content: left;
+    color: black;
+    background-color: white;
+    display: flex;
+    margin-top: 18rem;
+    margin-left: 6%;
+    margin-right: 40%;
+    z-index: 2;
+    padding: 2rem;
+}
+
+.imagem {
+    width: 35%;
+    height: 25%;
+}
+
+.botao {
+    padding: 0 0.4rem;
+    background-color: #008225;
+    margin: 2%;
+    border: none;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    width: 10vw;
+    min-width: 90px;
+    height: 4vh;
+    font-size: 130%;
+    color: white;
+    
+}
+
+.cart_description{
+    margin-left: 4%;
+    margin-right: 40%;
+
+}
+
+.white_bar{
+    color: black;
+    background-color: white;
+    display: flex;
+    margin-left: 6%;
+    margin-right: 40%;
+    z-index: 2;
+    justify-content: center;
+}
+
+.position_div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.texto {
+    margin-left: 4%;
+    font-size: 2rem;
 }
 
 /*         ID         */
@@ -196,15 +263,19 @@ nav {
 }
 
 .cart_description{
-    margin-left: 6%;
+    margin-left: 4%;
     margin-right: 40%;
-    margin-top: 2%;
+
+}
+
+.white_bar{
+    color: black;
     background-color: white;
     display: flex;
-    justify-content: left;
-    font-size: 0.8em;
-    padding: 0.5rem;
-
+    margin-left: 6%;
+    margin-right: 40%;
+    z-index: 2;
+    justify-content: center;
 }
 
 .position_div {
@@ -215,6 +286,11 @@ nav {
 
 .texto {
     margin-left: 4%;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
