@@ -263,19 +263,14 @@ a {
 }
 
 .cart_description{
-    margin-left: 4%;
-    margin-right: 40%;
-
-}
-
-.white_bar{
-    color: black;
-    background-color: white;
-    display: flex;
     margin-left: 6%;
     margin-right: 40%;
-    z-index: 2;
-    justify-content: center;
+    margin-top: 2%;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    padding: 1rem;
+
 }
 
 .position_div {
@@ -286,7 +281,7 @@ a {
 
 .texto {
     margin-left: 4%;
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 a {
