@@ -157,3 +157,16 @@ nav {
 #fechar_menu:hover {
     background-color: #3a8e60;
 }
+
+.main-grid {
+    padding-top: 100px;
+    display: grid;
+    gap: 30px;
+    margin-left: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 320px));
+}
+
+.product-content {
+    background: #008225;
+    min-height: 320px;
+}
