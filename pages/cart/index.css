@@ -241,6 +241,13 @@ a {
     padding: 2rem;
 }
 
+.layout_itens img {
+
+    width: 50%;
+    height: 50%;
+
+}
+
 .imagem {
     width: 35%;
     height: 25%;

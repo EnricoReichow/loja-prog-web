@@ -167,6 +167,18 @@ nav {
 }
 
 .product-content {
-    background: #008225;
+    background: #fff;
     min-height: 320px;
+}
+
+.product-content img {
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+.product-content img:hover {
+
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+
 }
