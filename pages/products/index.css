@@ -169,11 +169,12 @@ nav {
 .product-content {
     background: #fff;
     min-height: 320px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .product-content img {
     width: 100%;
-    height: 100%;
+    height: 75%;
     transition: all 300ms ease-in-out;
 }
 
@@ -181,4 +182,55 @@ nav {
 
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 
+}
+
+.product-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #e6e6e6; */
+    background-color: #bbffb3;
+    height: 15%;
+}
+
+.product-name {
+    width: 60%;
+}
+
+.product-add-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+}
+
+.price {
+    width: 30%;
+    color: gray;
+}
+
+.add-btn {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    border: none;
+    color: #FFFFFF;
+    background-color: #008225;
+    height: 100%;
+}
+
+.add-btn:hover {
+    background-color: #3a8e60;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease;
 }

@@ -7,7 +7,7 @@
 
 body {
 
-    background-color: white;
+    background-color: #c1c1c1;
 
 }
 
@@ -141,3 +141,73 @@ nav {
 #fechar_menu:hover {
     background-color: #3a8e60;
 }  
+
+/* main {
+    display: flex;
+    margin-top: 10%;
+    height: 70vh;
+    width: 100vw;
+    left: 50%;
+}
+
+.payment-card {
+    background-color: #cdcdcd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+} */
+
+main {
+    margin-top: 15vh; /* Adicione essa linha para dar espaço à navbar */
+}
+
+
+.payment-title,
+.products-list,
+.payment-method {
+    background-color: #cdcdcd;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px auto;
+}
+
+/* Centralize as divs horizontalmente */
+.payment-title,
+.products-list,
+.payment-method {
+    width: 80%; /* Ajuste a largura conforme necessário */
+}
+
+/* Centralize as divs verticalmente */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 60%;
+    height: 5vh;
+    text-indent: 5%;
+    border: solid 1px rgb(192, 192, 192);
+}
+
+#pagar-button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #008225;
+    color: #FFFFFF;
+}
+
+#pagar-button:hover {
+    background-color: #3a8e60;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease;
+}

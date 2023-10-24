@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="../../img/logo-break-point-icon-wallpaper.png">
     <title>Finalizar Compra | Break Point VS</title>
+    <script defer src="../../js/payment.js"></script>
 </head>
 
 <body>
@@ -25,6 +26,29 @@
             </div>
         </nav>
     </header>
+    <main>
+        <div class="payment-title">
+            <h2>Finalizar Compra</h2>
+        </div>
+        <div class="products-list">
+            <h3>Lista produtos</h3>
+        </div>
+        <div class="payment-method">
+            <label for="opcoes-pagamento">Selecione a forma de pagamento:</label>
+            <select id="opcoes-pagamento" name="opcao-pagamento">
+                <option value="Nenhum" selected>Nenhum</option>
+                <option value="Credito">Crédito</option>
+                <option value="Debito">Débito</option>
+                <option value="Pix">Pix</option>
+            </select>
+            <br>
+            <br>
+            <div id="payment-details"></div>
+            <br>
+            <br>
+            <button id="pagar-button" disabled>Pagar</button>
+        </div>
+    </main>
     <div id="menu" class="menu">
         <ul>
             <a href="../main/index.html">
