@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const fecharMenuButton = document.getElementById("fechar_menu");
 
     menuButton.addEventListener("click", function () {
-        menu.style.right = "0"; 
+        menu.style.right = "0px";
     });
 
     fecharMenuButton.addEventListener("click", function () {
-        menu.style.right = "-300px";
+        menu.style.right = "-100%"; // Definindo a largura do menu como -100% para escondê-lo
     });
 });

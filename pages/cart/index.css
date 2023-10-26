@@ -46,29 +46,29 @@ a {
 /*        CLASS       */
 
 .logo-img {
-    height: 80px;
-    width: 100px;  
+    height: 8rem;
+    width: 10rem;  
 }
 
 .cart-img {
-    height: 80px;
-    width: 100px;
+    height: 8rem;
+    width: 10rem;
 }
 
 .logo-bp {
-    height: 80px;
-    width: 100px;
+    height: 8rem;
+    width: 10rem;
 }
 
 .menu {
     position: fixed;
     top: 0vh;
-    right: -300px; /* Inicialmente, o menu estará oculto */
+    right: -100%; /* Inicialmente, o menu estará oculto */
     width: 15vw;
-    height: 26vh;
+    height: 25vh;
     background-color: #008225;  
     z-index: 1001; /* Um valor maior que o z-index do nav para sobrepor */
-    transition: right 0.3s ease-in-out;
+    transition: right 0.4s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,7 +103,7 @@ a {
 .menu a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .layout_itens {
@@ -128,11 +128,11 @@ a {
     background-color: #008225;
     margin: 2%;
     border: none;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     justify-content: center;
     text-align: center;
     width: 10vw;
-    min-width: 90px;
+    min-width: 9rem;
     height: 4vh;
     font-size: 130%;
     color: white;
@@ -184,11 +184,11 @@ a {
 }
 
 #search_product {
-    height: 35px;
-    width: 200px;
-    border-radius: 20px;
-    text-indent: 10px;
-    border: 2px solid #0184b4;
+    height: 3.5rem;
+    width: 20rem;
+    border-radius: 2rem;
+    text-indent: 1rem;
+    border: 0.2rem solid #0184b4;
 }
 
 #search_product:focus {
@@ -198,13 +198,13 @@ a {
 #menu_button_style {
     color: rgb(255, 255, 255);
     border: none;
-    border-radius: 6px;
-    padding: 5px;
+    border-radius: 0.6rem;
+    padding: 0.5rem;
     background-color: #008225;
-    height: 50px;
-    width: 120px;
+    height: 5rem;
+    width: 12rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 #menu_button_style:hover {
@@ -258,11 +258,11 @@ a {
     background-color: #008225;
     margin: 2%;
     border: none;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     justify-content: center;
     text-align: center;
     width: 10vw;
-    min-width: 90px;
+    min-width: 9rem;
     height: 4vh;
     font-size: 130%;
     color: white;
@@ -295,4 +295,22 @@ a {
     text-decoration: none;
     color: inherit;
 
+}
+
+@media all and (max-width: 400px) { 
+    .menu {
+        position: fixed;
+        top: 0vh;
+        right: -100%; /* Inicialmente, o menu estará oculto */
+        width: 100vw;
+        height: 100vh;
+        background-color: #008225;  
+        z-index: 1001; /* Um valor maior que o z-index do nav para sobrepor */
+        transition: right 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
 }

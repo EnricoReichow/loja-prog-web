@@ -234,3 +234,21 @@ nav {
     color: rgb(0, 0, 0);
     transition: background-color 0.3s ease;
 }
+
+@media all and (max-width: 400px) { 
+    .menu {
+        position: fixed;
+        top: 0vh;
+        right: -100%; /* Inicialmente, o menu estará oculto */
+        width: 100vw;
+        height: 100vh;
+        background-color: #008225;  
+        z-index: 1001; /* Um valor maior que o z-index do nav para sobrepor */
+        transition: right 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+}
