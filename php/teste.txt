@@ -1,1 +1,30 @@
 so pra ficar no github
+
+//$con = mysqli_connect("localhost:3306", "root", "Futebol300904", "lojaprogweb");
+
+    //$resultado = mysqli_query($con, "SELECT * FROM carrinhodecompras");
+    // $resultado2 = mysqli_query($con, "SELECT * FROM products");
+
+    //$dados = array();
+    // $dados2 = array();
+
+
+    //while($registro = mysqli_fetch_assoc($resultado)){
+
+        //array_push($dados, $registro);
+
+    //}
+
+    // while($registro2 = mysqli_fetch_assoc($resultado2)){
+
+    //     array_push($dados2, $registro2);
+
+    // }
+
+    //$json = json_encode($dados);
+    // $json2 = json_encode($dados2);
+    //echo $json
+    // $json2;
+
+    
+    // echo $json2;

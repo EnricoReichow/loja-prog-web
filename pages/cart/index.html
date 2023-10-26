@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="../../img/logo-break-point-icon-wallpaper.png">
     <title>Carrinho | Break Point VS</title>
-    <script defer src="../../js/cart.js"></script>
 </head>
 
 <body>
@@ -26,8 +25,16 @@
     </header>
     <main class="main_body">
         <div class="layout_itens">
-            <h1>Seu carrinho está vazio</h1>
+            <h1 id="cart-name">Carrinho: </h1>
+            <!-- <div class="cart-item">
+                <img src="../../img/2.png" alt="" id="img-product">
+                <h3 id="name-item-1">Produto tal do taldaldal</h3>
+                <h4 id="price-item-1">R$975.99</h4>
+                <button id="remove-btn">Remover</button>
+            </div> -->
+            <h2 id="total-price">Preço: </h2>
         </div>
+        
     </main>
     <div id="menu" class="menu">
         <ul>
@@ -44,6 +51,7 @@
         </ul>
     </div>
     <script defer src="../../js/menu.js"></script>
+    <script defer src="../../js/getCart.js"></script>
 </body>
 
 </html>

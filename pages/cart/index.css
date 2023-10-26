@@ -116,6 +116,7 @@ a {
     margin-right: 40%;
     z-index: 2;
     padding: 2rem;
+    flex-direction: column;
 }
 
 .imagem {
@@ -239,6 +240,7 @@ a {
     margin-right: 40%;
     z-index: 2;
     padding: 2rem;
+    gap: 30px;
 }
 
 .layout_itens img {
@@ -295,6 +297,22 @@ a {
     text-decoration: none;
     color: inherit;
 
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cart-name {
+    height: 50%;
+}
+
+#img-product {
+    width: 100px;
+    height: 100px;
 }
 
 @media all and (max-width: 400px) { 
