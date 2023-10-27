@@ -43,7 +43,7 @@ paymentMethodSelect.addEventListener('change', () => {
 
         // Adiciona imagem para pagamento com Pix
         const pixImage = document.createElement('img');
-        const imagePath = '../../img/qrcode.jpg';
+        const imagePath = '../../img/qrcode.png';
         pixImage.src = imagePath;
         pixImage.width = 400;
         pixImage.height = 400;

@@ -1,11 +1,61 @@
 /*        HTML        */
-
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 /*        CLASS       */
+.main-container {
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #c1c1c1;
+}
 
 
+.main-content {
+    display: flex;
+    flex-direction: row;
+    border: solid 1px black;
+    border-radius: 1.5rem;
+    background-color: #008225; 
+}
+
+
+.imagen {
+    display: flex;
+    max-height: 25rem;
+    max-width: 25rem;
+}
+
+.imagen img {
+    height: 20%;
+    width: 20%;
+}
+
+.campos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.inputs {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    width: 50%;
+    height: 10%;
+    margin: 1rem;
+}
 
 /*         ID         */
