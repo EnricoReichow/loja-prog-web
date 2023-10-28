@@ -42,6 +42,6 @@ async function adicionarAoCarrinho(idProduto) {
             console.error('Erro na solicitação POST:', resultado.status);
         }
     } catch (error) {
-        console.error('Erro na solicitação POST:', error);
+        console.error('Erro na solicitação POST:', error);
     }
 }

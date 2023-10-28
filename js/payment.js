@@ -15,12 +15,19 @@ paymentMethodSelect.addEventListener('change', () => {
         const expirationDateInput = createInput('date', 'Data de Vencimento');
         const cardHolderInput = createInput('text', 'Nome do Titular do Cartão');
         const cvvInput = createInput('text', 'CVV');
+        const addressInput = createInput('text', 'Endereço');
+        const addressNumberInput = createInput('text', 'Número');
+        const addressDescriptionInput = createInput('text', 'Informação importante (endereço)');
+
 
         paymentDetails.appendChild(h4);
         addInputContainer(paymentDetails, cardNumberInput);
         addInputContainer(paymentDetails, expirationDateInput);
         addInputContainer(paymentDetails, cardHolderInput);
         addInputContainer(paymentDetails, cvvInput);
+        addInputContainer(paymentDetails, addressInput);
+        addInputContainer(paymentDetails, addressNumberInput);
+        addInputContainer(paymentDetails, addressDescriptionInput);
     } else if (selectedMethod === 'Debito') {
         // Adiciona campos para pagamento com cartão de débito
         const h4 = document.createElement('h4');
@@ -30,16 +37,26 @@ paymentMethodSelect.addEventListener('change', () => {
         const expirationDateInput = createInput('date', 'Data de Vencimento');
         const cardHolderInput = createInput('text', 'Nome do Titular do Cartão');
         const cvvInput = createInput('text', 'CVV');
+        const addressInput = createInput('text', 'Endereço');
+        const addressNumberInput = createInput('text', 'Número');
+        const addressDescriptionInput = createInput('text', 'Informação importante (endereço)');
 
         paymentDetails.appendChild(h4);
         addInputContainer(paymentDetails, cardNumberInput);
         addInputContainer(paymentDetails, expirationDateInput);
         addInputContainer(paymentDetails, cardHolderInput);
         addInputContainer(paymentDetails, cvvInput);
+        addInputContainer(paymentDetails, addressInput);
+        addInputContainer(paymentDetails, addressNumberInput);
+        addInputContainer(paymentDetails, addressDescriptionInput);
     } else if (selectedMethod === 'Pix') {
         // Adiciona nome do método Pix
         const h4 = document.createElement('h4');
         h4.textContent = 'Método: Pix';
+
+        const addressInput = createInput('text', 'Endereço');
+        const addressNumberInput = createInput('text', 'Número');
+        const addressDescriptionInput = createInput('text', 'Informação importante (endereço)')
 
         // Adiciona imagem para pagamento com Pix
         const pixImage = document.createElement('img');
@@ -49,6 +66,9 @@ paymentMethodSelect.addEventListener('change', () => {
         pixImage.height = 400;
 
         paymentDetails.appendChild(h4);
+        addInputContainer(paymentDetails, addressInput);
+        addInputContainer(paymentDetails, addressNumberInput);
+        addInputContainer(paymentDetails, addressDescriptionInput);
         paymentDetails.appendChild(pixImage);
         pagarButton.textContent = "Feito"
     }

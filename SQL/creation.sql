@@ -78,3 +78,5 @@ INSERT INTO carrinhoDeCompras (idProduct)
 VALUES (2);
 
 SELECT * FROM carrinhoDeCompras;
+
+DELETE FROM carrinhodecompras WHERE idItemNoCarrinho=2;
