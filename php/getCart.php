@@ -1,7 +1,7 @@
 <?php
 
-$con = mysqli_connect("localhost:3306", "root", "Futebol300904", "lojaprogweb");
-// $con = mysqli_connect('localhost', 'root', '170805Gabi', 'lojaprogweb');
+//$con = mysqli_connect("localhost:3306", "root", "Futebol300904", "lojaprogweb");
+$con = mysqli_connect('localhost', 'root', '170805Gabi', 'lojaprogweb');
 
 
 // $resultado = mysqli_query($con, "SELECT c.idProduct, p.productName, p.price FROM carrinhodecompras c INNER JOIN products p ON c.idProduct = p.id");

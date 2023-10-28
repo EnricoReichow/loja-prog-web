@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
 
     background-color: #c1c1c1;
@@ -14,6 +18,8 @@ body {
 nav {
     position: fixed; 
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -29,19 +35,19 @@ nav {
 /*        CLASS       */
 
 .logo-img {
-    width: 100px; 
-    height: 80px; 
+    width: 10rem; 
+    height: 8rem; 
 }
 
 .cart-img {
-    height: 80px;
-    width: 100px;
+    height: 8rem;
+    width: 10rem;
 }
 
 .menu {
     position: fixed;
     top: 0vh;
-    right: -300px; /* Inicialmente, o menu estará oculto */
+    right: -30rem; /* Inicialmente, o menu estará oculto */
     width: 15vw;
     height: 26vh;
     background-color: #008225;  
@@ -81,7 +87,7 @@ nav {
 .menu a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 /*         ID         */
@@ -102,12 +108,12 @@ nav {
 }
 
 #search_product {
-    height: 45px;
-    width: 300px;
-    border-radius: 25px;
-    text-indent: 20px;
-    border: 5px solid #008225;
-    font-size: 20px;
+    height: 4.5rem;
+    width: 30rem;
+    border-radius: 2.5rem;
+    text-indent: 2rem;
+    border: 0.5rem solid #008225;
+    font-size: 2rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     transition: width 0.4s ease;
 
@@ -115,23 +121,23 @@ nav {
 
 #search_product:focus {
     outline: none;
-    width: 350px;
+    width: 35rem;
 }
 
 #search_product:hover {
-    width: 350px;
+    width: 35rem;
 }
 
 #menu_button_style {
     color: rgb(255, 255, 255);
     border: none;
-    border-radius: 6px;
-    padding: 5px;
+    border-radius: 0.6rem;
+    padding: 0.5rem;
     background-color: #008225;
-    height: 50px;
-    width: 120px;
+    height: 5rem;
+    width: 12rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 #menu_button_style:hover {
@@ -150,7 +156,7 @@ nav {
     width: 15vw;
     height: 5vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 15px;
+    font-size: 1.5rem;
     transition: background-color 0.1s ease;
 }
 
@@ -159,16 +165,16 @@ nav {
 }
 
 .main-grid {
-    padding-top: 100px;
+    padding-top: 10rem;
     display: grid;
-    gap: 30px;
-    margin-left: 30px;
+    gap: 3rem;
+    margin-left: 3rem;
     grid-template-columns: repeat(auto-fill, minmax(320px, 320px));
 }
 
 .product-content {
     background: #fff;
-    min-height: 320px;
+    min-height: 32rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -251,4 +257,16 @@ nav {
         justify-content: space-between;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
+
+    #search_product {
+        height: 3.5rem;
+        width: 10rem;
+        font-size: 1rem;
+        text-indent: 1rem;    
+    }
+
+    #search_product:focus {
+        width: 12rem;
+    }
+
 }

@@ -12,11 +12,12 @@ html {
 /*        CLASS       */
 .main-container {
 width: 100vw;
-height: 100vh;
+min-height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
 background-color: #c1c1c1;
+padding: 5rem;
 }
 
 
@@ -26,18 +27,30 @@ background-color: #c1c1c1;
     border: solid 1px black;
     border-radius: 1.5rem;
     background-color: #008225; 
+    width: 120rem;
+    padding: 1rem;
 }
 
 
-.imagen {
+.imagem {
     display: flex;
-    max-height: 25rem;
-    max-width: 25rem;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 50%;
 }
 
-.imagen img {
-    height: 20%;
-    width: 20%;
+.imagem p {
+    width: 70%;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+}
+
+.imagem img {
+    height: 26.5rem;
+    width: 30rem;
+    
 }
 
 .campos {
@@ -47,6 +60,7 @@ background-color: #c1c1c1;
     justify-content: center;
     align-items: center;
     align-content: center;
+    width: 50%;
 }
 
 
@@ -59,3 +73,34 @@ background-color: #c1c1c1;
 }
 
 /*         ID         */
+
+
+
+@media all and (max-width: 700px) {
+
+    .main-container {
+        padding: 3rem;
+    }
+
+    .main-content {
+        flex-flow: wrap row;
+    }
+
+    .imagem {
+        width: 100%;
+    }
+
+    .imagem p {
+        font-size: 1.5rem;
+    }
+
+    .imagem img {
+    
+        height: 19rem;
+        width: 20rem;
+    }
+
+    .campos {
+        width: 100%;
+    }
+}

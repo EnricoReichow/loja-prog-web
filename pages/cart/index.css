@@ -87,7 +87,6 @@ a {
 
 .menu li {
     display: flex;
-    /* margin-bottom: 20px;    */
     width: 15vw; 
     height: 7vh;
     justify-content: center;
@@ -304,6 +303,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .cart-name {
@@ -311,11 +311,11 @@ a {
 }
 
 #img-product {
-    width: 100px;
-    height: 100px;
+    width: 10rem;
+    height: 10rem;
 }
 
-@media all and (max-width: 400px) { 
+@media all and (max-width: 550px) { 
     .menu {
         position: fixed;
         top: 0vh;
@@ -331,4 +331,6 @@ a {
         justify-content: space-between;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
+
+
 }
