@@ -1,0 +1,272 @@
+/*        HTML        */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+
+    background-color: #c1c1c1;
+
+}
+
+nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #01641d;
+    /*#006ba5;*/
+    height: 10vh;
+    z-index: 1000;
+    box-shadow: 0px 0px 20px #00b330;
+}
+
+/*        CLASS       */
+
+.logo-img {
+    width: 10rem; 
+    height: 8rem; 
+}
+
+.cart-img {
+    height: 8rem;
+    width: 10rem;
+}
+
+.menu {
+    position: fixed;
+    top: 0vh;
+    right: -30rem; /* Inicialmente, o menu estará oculto */
+    width: 15vw;
+    height: 26vh;
+    background-color: #008225;  
+    z-index: 1001; /* Um valor maior que o z-index do nav para sobrepor */
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 15vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu li {
+    display: flex;
+    /* margin-bottom: 20px;    */
+    width: 15vw; 
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.1s ease;
+}
+
+.menu li:hover {
+    background-color: #3a8e60;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+/*         ID         */
+
+#container_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95vw;
+    align-items: center;
+}
+
+#left_nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+}
+
+#search_product {
+    height: 4.5rem;
+    width: 30rem;
+    border-radius: 2.5rem;
+    text-indent: 2rem;
+    border: 0.5rem solid #008225;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: width 0.4s ease;
+
+}
+
+#search_product:focus {
+    outline: none;
+    width: 35rem;
+}
+
+#search_product:hover {
+    width: 35rem;
+}
+
+#menu_button_style {
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+    background-color: #008225;
+    height: 5rem;
+    width: 12rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+#menu_button_style:hover {
+    background-color: #3a8e60;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+
+
+#fechar_menu {
+    background-color: #008225;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 15vw;
+    height: 5vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+    transition: background-color 0.1s ease;
+}
+
+#fechar_menu:hover {
+    background-color: #3a8e60;
+}
+
+.main-grid {
+    padding-top: 10rem;
+    display: grid;
+    gap: 3rem;
+    margin-left: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 320px));
+}
+
+.product-content {
+    background: #fff;
+    min-height: 32rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product-content img {
+    width: 100%;
+    height: 75%;
+    transition: all 300ms ease-in-out;
+}
+
+.product-content img:hover {
+
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+
+}
+
+.product-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #e6e6e6; */
+    background-color: #bbffb3;
+    height: 15%;
+}
+
+.product-name {
+    width: 60%;
+}
+
+.product-add-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+}
+
+.price {
+    width: 30%;
+    color: gray;
+}
+
+.add-btn {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    border: none;
+    color: #FFFFFF;
+    background-color: #008225;
+    height: 100%;
+}
+
+.add-btn:hover {
+    background-color: #3a8e60;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease;
+}
+
+@media all and (max-width: 400px) { 
+    .menu {
+        position: fixed;
+        top: 0vh;
+        right: -100%; /* Inicialmente, o menu estará oculto */
+        width: 100vw;
+        height: 100vh;
+        background-color: #008225;  
+        z-index: 1001; /* Um valor maior que o z-index do nav para sobrepor */
+        transition: right 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    #search_product {
+        height: 3.5rem;
+        width: 10rem;
+        font-size: 1rem;
+        text-indent: 1rem;    
+    }
+
+    #search_product:focus {
+        width: 12rem;
+    }
+
+}
