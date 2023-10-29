@@ -334,3 +334,7 @@ a {
 
 
 }
+
+button {
+    cursor: pointer;
+}

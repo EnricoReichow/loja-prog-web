@@ -4,10 +4,10 @@ window.onload = async function () {
     });
 
     var dados = await resultado.json();
-    console.log(resultado)
+    var total = 0;
+    console.log(resultado);
 
     for (var i = 0; i < dados.length; i++) {
-
         var template =
         `<div class="product-content">
             <img src="../../img/${dados[i].id}.png" alt="raquete-de-tennis-vermelha" id="img-1">
@@ -17,27 +17,32 @@ window.onload = async function () {
             </div>
             <div class="product-card">
                 <div class="product-add-cart">
-                    <button class="add-btn" name="idProduto" id="add-item-1" onclick="adicionarAoCarrinho(${dados[i].id})">Adicionar ao Carrinho</button>
+                <button class="add-btn" name="idProduto" id="add-item-1" onclick="deleteProduct(${dados[i].id})">Remover</button>
                 </div>
             </div>
         </div>`;
 
         document.querySelector(".main-grid").innerHTML += template;
+
     }
 }
 
-async function adicionarAoCarrinho(idProduto) {
+async function deleteProduct(id) {
+
+    console.log(id);
+
     const data = new FormData();
-    data.append('idProduto', idProduto);
+    data.append('id', id);
 
     try {
-        const resultado = await fetch("../../php/adicionarAoCarrinho.php", {
+        const resultado = await fetch("../../php/deleteProductAdm.php", {
             method: "POST",
             body: data,
         });
 
         if (resultado.ok) {
-            alert("Produto adicionado ao carrinho com sucesso!");
+            alert("Produto removido do carrinho com sucesso!");
+            // window.location.reload(true);
         } else {
             console.error('Erro na solicitação POST:', resultado.status);
         }
