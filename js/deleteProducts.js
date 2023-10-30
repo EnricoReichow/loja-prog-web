@@ -46,6 +46,11 @@ function updateProductList(products) {
                     <h4 class="product-name" id="price-item-${i}">${product.productName}</h4>
                     <h4 class="price" id="add-item-${i}">R$${parseFloat(product.price).toFixed(2)}</h4>
                 </div>
+                <div class="product-card">
+                    <div class="product-add-cart">
+                    <button class="add-btn" name="idProduto" id="add-item-1" onclick="deleteProduct(${product.id})">Remover</button>
+                    </div>
+                </div>
             </div>`;
 
         mainGrid.innerHTML += template;
