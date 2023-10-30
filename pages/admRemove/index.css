@@ -67,6 +67,7 @@ nav {
     width: 15vw;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 }
 
 .menu li {
@@ -77,6 +78,7 @@ nav {
     align-items: center;
     text-decoration: none;
     transition: background-color 0.1s ease;
+    
 }
 
 .menu li:hover {
@@ -175,6 +177,7 @@ nav {
     background: #fff;
     min-height: 32rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: #008225 0.5rem 0.5rem 2rem;
 }
 
 .product-content img {
@@ -200,6 +203,7 @@ nav {
 
 .product-name {
     width: 60%;
+    font-size: 1.7rem;
 }
 
 .product-add-cart {
@@ -222,6 +226,7 @@ nav {
 .price {
     width: 30%;
     color: gray;
+    font-size: 1.4rem;
 }
 
 .add-btn {
@@ -231,6 +236,7 @@ nav {
     color: #FFFFFF;
     background-color: #008225;
     height: 100%;
+    
 }
 
 .add-btn:hover {
@@ -254,6 +260,17 @@ nav {
         align-items: center;
         justify-content: space-between;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 3rem;
+    }
+
+    .menu ul {
+        height: 100%;
+    }
+
+    .menu ul li a {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     #search_product {

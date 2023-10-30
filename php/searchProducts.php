@@ -1,7 +1,7 @@
 <?php
 
-    $con = mysqli_connect("localhost:3306", "root", "Futebol300904", "lojaprogweb");
-    // $con = mysqli_connect('localhost', 'root', '170805Gabi', 'lojaprogweb');
+    //$con = mysqli_connect("localhost:3306", "root", "Futebol300904", "lojaprogweb");
+    $con = mysqli_connect('localhost', 'root', '170805Gabi', 'lojaprogweb');
 
     if (isset($_GET['term'])) {
     $searchTerm = mysqli_real_escape_string($con, $_GET['term']);

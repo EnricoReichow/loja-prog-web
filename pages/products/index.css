@@ -255,15 +255,20 @@ nav {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
+    .logo-img {
+        width: 8rem; 
+        height: 6rem; 
+    }
+
     #search_product {
-        height: 3.5rem;
-        width: 10rem;
+        height: 4.3rem;
+        width: 13rem;
         font-size: 1rem;
         text-indent: 1rem;    
     }
 
     #search_product:focus {
-        width: 12rem;
+        width: 15rem;
     }
 
 }

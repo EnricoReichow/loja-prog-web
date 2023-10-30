@@ -112,7 +112,8 @@ a {
     display: flex;
     margin-top: 18rem;
     margin-left: 6%;
-    margin-right: 40%;
+    margin-right: 20%;
+    align-items: center;
     z-index: 2;
     padding: 2rem;
     flex-direction: column;
@@ -229,6 +230,7 @@ a {
     background-color: #3a8e60;
 }
 
+
 .layout_itens {
     justify-content: left;
     color: black;
@@ -304,6 +306,25 @@ a {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.cart-item h3, h4 {
+    font-size: 1.6rem;
+}
+
+.cart-item button {
+    border-radius: 1.5rem;
+    border: 0.1rem solid #008225 ;
+    color: #008225;
+    background: white;
+    padding: 0.5rem;
+    transition: all 300ms ease-in-out;
+}
+
+.cart-item button:hover {
+    color: white;
+    background: #008225;
 }
 
 .cart-name {
@@ -311,8 +332,8 @@ a {
 }
 
 #img-product {
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
 }
 
 @media all and (max-width: 550px) { 
@@ -330,6 +351,20 @@ a {
         align-items: center;
         justify-content: space-between;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .logo-img {
+        width: 8rem; 
+        height: 6rem; 
+    }
+
+    .cart-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 2frem;
     }
 
 }

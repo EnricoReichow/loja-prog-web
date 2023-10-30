@@ -15,6 +15,14 @@ body {
 
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
+h3, h4 {
+    font-size: 2rem;
+}
+
 nav {
     position: fixed; 
     top: 0;
@@ -164,10 +172,20 @@ main {
     width: 80%;
 }
 
+.payment-method label {
+    font-size: 2rem;
+}
+
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.input-container input {
+    border-radius: 1.5rem;
+    border: 0.1rem solid #008225 ;
+    margin: 0.5rem;
 }
 
 input {
@@ -240,6 +258,16 @@ input {
         width: 20rem;
     }
 
+    .cart-item {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .cart-item img {
+        height: 10rem;
+        width: 10rem;
+    }
+
     #left_nav {
         gap: 5%;
     }
@@ -248,6 +276,23 @@ input {
         width: 6.2rem;
         height: 5rem;
     }
+
+    .logo-img {
+        width: 8rem; 
+        height: 6rem; 
+    }
+
+    #search_product {
+        height: 4.3rem;
+        width: 13rem;
+        font-size: 1rem;
+        text-indent: 1rem;    
+    }
+
+    #search_product:focus {
+        width: 15rem;
+    }
+
 
 }
 
