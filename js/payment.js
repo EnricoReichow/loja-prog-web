@@ -4,10 +4,9 @@ const pagarButton = document.getElementById('pagar-button');
 
 paymentMethodSelect.addEventListener('change', () => {
     const selectedMethod = paymentMethodSelect.value;
-    paymentDetails.innerHTML = ''; // Limpa os detalhes anteriores
+    paymentDetails.innerHTML = '';
 
     if (selectedMethod === 'Credito') {
-        // Adiciona campos para pagamento com cartão de crédito
         const h4 = document.createElement('h4');
         h4.textContent = 'Método: Crédito';
 
@@ -19,7 +18,6 @@ paymentMethodSelect.addEventListener('change', () => {
         const addressNumberInput = createInput('text', 'Número');
         const addressDescriptionInput = createInput('text', 'Informação importante (endereço)');
 
-
         paymentDetails.appendChild(h4);
         addInputContainer(paymentDetails, cardNumberInput);
         addInputContainer(paymentDetails, expirationDateInput);
@@ -29,7 +27,6 @@ paymentMethodSelect.addEventListener('change', () => {
         addInputContainer(paymentDetails, addressNumberInput);
         addInputContainer(paymentDetails, addressDescriptionInput);
     } else if (selectedMethod === 'Debito') {
-        // Adiciona campos para pagamento com cartão de débito
         const h4 = document.createElement('h4');
         h4.textContent = 'Método: Débito';
 
@@ -50,7 +47,6 @@ paymentMethodSelect.addEventListener('change', () => {
         addInputContainer(paymentDetails, addressNumberInput);
         addInputContainer(paymentDetails, addressDescriptionInput);
     } else if (selectedMethod === 'Pix') {
-        // Adiciona nome do método Pix
         const h4 = document.createElement('h4');
         h4.textContent = 'Método: Pix';
 
@@ -58,7 +54,6 @@ paymentMethodSelect.addEventListener('change', () => {
         const addressNumberInput = createInput('text', 'Número');
         const addressDescriptionInput = createInput('text', 'Informação importante (endereço)')
 
-        // Adiciona imagem para pagamento com Pix
         const pixImage = document.createElement('img');
         const imagePath = '../../img/qrcode.png';
         pixImage.src = imagePath;
@@ -91,5 +86,70 @@ function addInputContainer(parent, inputElement) {
 }
 
 function updatePagarButton() {
-    pagarButton.removeAttribute('disabled'); // Habilita o botão para todos os métodos
+    pagarButton.removeAttribute('disabled');
+}
+
+async function deleteAllItemsFromCart() {
+    try {
+        const response = await fetch('../../php/cleanCart.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+        });
+
+        if (!response.ok) {
+            throw new Error('Erro na solicitação');
+        }
+
+        const data = await response.json();
+        alert(data.message);
+
+        window.location.assign("../products/index.html");
+    } catch (error) {
+        console.error('Erro:', error.message);
+    }
+}
+
+document.getElementById('pagar-button').addEventListener('click', async () => {
+    const selectedMethod = paymentMethodSelect.value;
+
+    if (selectedMethod === 'Credito' || selectedMethod === 'Debito') {
+        const cardNumber = document.querySelector('input[placeholder="Número do Cartão"]').value;
+        const expirationDate = document.querySelector('input[placeholder="Data de Vencimento"]').value;
+        const cardHolder = document.querySelector('input[placeholder="Nome do Titular do Cartão"]').value;
+        const cvv = document.querySelector('input[placeholder="CVV"]').value;
+        const address = document.querySelector('input[placeholder="Endereço"]').value;
+        const addressNumber = document.querySelector('input[placeholder="Número"]').value;
+        const addressDescription = document.querySelector('input[placeholder="Informação importante (endereço)"]').value;
+
+        if (cardNumber === '' || expirationDate === '' || cardHolder === '' || cvv === '' || address === '' || addressNumber === '' || addressDescription === '') {
+            alert('Preencha todos os campos obrigatórios.');
+            return;
+        }
+
+        if (!isValidDate(expirationDate)) {
+            alert('A data de vencimento não é válida ou está no passado.');
+            return;
+        }
+
+    } else if (selectedMethod === 'Pix') {
+        const address = document.querySelector('input[placeholder="Endereço"]').value;
+        const addressNumber = document.querySelector('input[placeholder="Número"]').value;
+        const addressDescription = document.querySelector('input[placeholder="Informação importante (endereço)"]').value;
+
+        if (address === '' || addressNumber === '' || addressDescription === '') {
+            alert('Preencha todos os campos obrigatórios.');
+            return;
+        }
+
+    }
+
+    await deleteAllItemsFromCart();
+});
+
+function isValidDate(dateString) {
+    const today = new Date();
+    const inputDate = new Date(dateString);
+    return inputDate > today;
 }

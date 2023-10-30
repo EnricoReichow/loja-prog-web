@@ -26,7 +26,6 @@ nav {
     align-items: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: #01641d;
-    /*#006ba5;*/
     height: 10vh;
     z-index: 1000;
     box-shadow: 0px 0px 20px #00b330;
@@ -47,11 +46,11 @@ nav {
 .menu {
     position: fixed;
     top: 0vh;
-    right: -30rem; /* Inicialmente, o menu estará oculto */
+    right: -30rem;
     width: 15vw;
     height: 26vh;
     background-color: #008225;  
-    z-index: 1001; /* Um valor maior que o z-index do nav para sobrepor */
+    z-index: 1001;
     transition: right 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
@@ -71,7 +70,6 @@ nav {
 
 .menu li {
     display: flex;
-    /* margin-bottom: 20px;    */
     width: 15vw; 
     height: 7vh;
     justify-content: center;
@@ -195,7 +193,6 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* background-color: #e6e6e6; */
     background-color: #bbffb3;
     height: 15%;
 }
@@ -245,11 +242,11 @@ nav {
     .menu {
         position: fixed;
         top: 0vh;
-        right: -100%; /* Inicialmente, o menu estará oculto */
+        right: -100%;
         width: 100vw;
         height: 100vh;
         background-color: #008225;  
-        z-index: 1001; /* Um valor maior que o z-index do nav para sobrepor */
+        z-index: 1001;
         transition: right 0.5s ease-in-out;
         display: flex;
         flex-direction: column;

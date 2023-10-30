@@ -10,8 +10,6 @@ $resultado = mysqli_query($con, "DELETE FROM carrinhodecompras WHERE idItemNoCar
 $json = json_encode($resultado);
 echo $json;
 
-
-
 $idItemNoCarrinho = $_POST['idItemNoCarrinho'];
 
 echo $idItemNoCarrinho;

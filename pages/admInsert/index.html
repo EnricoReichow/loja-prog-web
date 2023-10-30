@@ -38,13 +38,13 @@
         </ul>
     </div>
     <script defer src="../../js/menu.js"></script>
-    <div class="input-container">
+    <form class="input-container" id="input-container">
         <input type="text" name="new-product-name" id="new-product-name">
         <input type="text" name="new-product-price" id="new-product-price">
         <input type="file" name="new-product-image" id="new-product-image">
-        <button name="add-new-product" id="add-new-product">Cadastrar Produto</button>
+        <button name="add-new-product" id="add-new-product" onclick="addNewProduct()">Cadastrar Produto</button>
         <h3 name="fail-message" id="fail-message"></h3>
-    </div>
+    </form>
     <div class="main-grid">
         <!-- <div class="product-content">
             <img src="../../img/1.png" alt="raquete-de-tennis-vermelha" id="img-1">
@@ -58,7 +58,6 @@
                 </div>
             </div>
         </div> -->
-
     </div>
     <script src="../../js/getProductsAdm.js"></script>
 </body>

@@ -208,7 +208,6 @@ input {
     display: flex;
     flex-flow: wrap row;
     align-items: center;
-    /* justify-content: center;     */
     gap: 5%;
     margin-left: 25%;
 }

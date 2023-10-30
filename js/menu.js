@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     fecharMenuButton.addEventListener("click", function () {
-        menu.style.right = "-100%"; // Definindo a largura do menu como -100% para escondê-lo
+        menu.style.right = "-100%";
     });
 });

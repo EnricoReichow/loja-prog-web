@@ -62,7 +62,7 @@ SELECT * FROM adm;
 
 #------------
 
-CREATE TABLE `lojaprogweb`.`carrinhoDeCompras` (
+CREATE TABLE `lojaprogweb`.`carrinhodecompras` (
   `idItemNoCarrinho` INT NOT NULL AUTO_INCREMENT,
   `idProduct` INT NOT NULL,
   PRIMARY KEY (`idItemNoCarrinho`),
@@ -70,9 +70,11 @@ CREATE TABLE `lojaprogweb`.`carrinhoDeCompras` (
   FOREIGN KEY (`idProduct`) REFERENCES `lojaprogweb`.`products` (`id`),
   CONSTRAINT `fk_carrinho_product` FOREIGN KEY (`idProduct`)
     REFERENCES `lojaprogweb`.`products` (`id`)
-    ON DELETE NO ACTION
+    ON DELETE cascade
     ON UPDATE NO ACTION
 );
+
+DROP TABLE carrinhodecompras;
 
 INSERT INTO carrinhoDeCompras (idProduct)
 VALUES (2);
