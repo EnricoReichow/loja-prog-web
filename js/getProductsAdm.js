@@ -54,12 +54,11 @@ async function addNewProduct() {
     var arquivo = document.getElementById('input-container');
     var dados = new FormData(arquivo);
 
-    fetch('../../php/addNewProduct.php', {
+    await fetch('../../php/addNewProduct.php', {
         method: "POST",
         body: dados
     });
 
-    alert("Produto cadastrado com sucesso!")
     window.location.reload(true);
 }
 

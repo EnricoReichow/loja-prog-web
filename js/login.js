@@ -12,11 +12,11 @@ function verificarLogin() {
 
     if (email == userEmail && senha == userPassword) {
 
-        window.location.assign("../products/index.html");
+        window.location.assign("pages/products/index.html");
 
     } else if (email == admEmail && senha == admPassword) {
 
-        window.location.assign("../admInsert/index.html");
+        window.location.assign("pages/admInsert/index.html");
 
     } else {
         msgErro.textContent = textoIncorreto
