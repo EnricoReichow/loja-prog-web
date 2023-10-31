@@ -72,6 +72,7 @@ async function deleteProduct(id) {
 
         if (resultado.ok) {
             alert("Produto removido do carrinho com sucesso!");
+            window.location.reload(true);
         } else {
             console.error('Erro na solicitação POST:', resultado.status);
         }

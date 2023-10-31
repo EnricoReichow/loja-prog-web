@@ -199,6 +199,7 @@ nav {
 
 .product-name {
     width: 60%;
+    font-size: 1.7rem;
 }
 
 .product-add-cart {
@@ -221,6 +222,7 @@ nav {
 .price {
     width: 30%;
     color: gray;
+    font-size: 1.4rem;
 }
 
 .add-btn {

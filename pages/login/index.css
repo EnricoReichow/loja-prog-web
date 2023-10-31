@@ -10,6 +10,11 @@ html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+h3 {
+    margin-top: 1rem;
+    color: white;
+}
+
 /*        CLASS       */
 .main-container {
 width: 100vw;
@@ -64,6 +69,14 @@ padding: 5rem;
     width: 50%;
 }
 
+.campos input, button {
+    border: 0.1rem solid #008225
+}
+
+.campos input:focus {
+    border: 0.1rem solid #008225
+}
+
 
 .inputs {
     padding: 1.5rem;
@@ -99,6 +112,14 @@ padding: 5rem;
     
         height: 19rem;
         width: 20rem;
+    }
+
+    .inputs {
+        padding: 1.5rem;
+        border-radius: 1.5rem;
+        width: 50%;
+        height: 20%;
+        margin: 0rem;
     }
 
     .campos {

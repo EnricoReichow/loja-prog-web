@@ -269,18 +269,19 @@ nav {
 }
 .formulario button {
     width: 100%;
-        border-radius: 1.5rem;
+    border-radius: 1.5rem;
     border: none;
     margin: 1rem;
     padding: 1.5rem;
     cursor: pointer;
     transition: all 300ms ease-in-out;
-    color: #008225;
+    color: #FFF;
+    background-color: #008225;
 }
 
 .formulario button:hover {
-    color: white;
-    background: #008225;
+    color: black;
+    background: #3a8e60;
 }
 
 button {

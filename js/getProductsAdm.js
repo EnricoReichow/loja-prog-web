@@ -59,6 +59,8 @@ async function addNewProduct() {
         body: dados
     });
 
+    alert("Produto cadastrado com sucesso!")
+    window.location.reload(true);
 }
 
 document.addEventListener("DOMContentLoaded", function () {

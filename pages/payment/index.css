@@ -186,14 +186,12 @@ main {
     border-radius: 1.5rem;
     border: 0.1rem solid #008225 ;
     margin: 0.5rem;
-}
-
-input {
-    width: 60%;
+    width: 30%;
     height: 5vh;
     text-indent: 5%;
     border: solid 0.1rem rgb(192, 192, 192);
 }
+
 
 #pagar-button {
     padding-top: 2rem;
