@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    text-decoration: none;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 390px;
+    background-color: antiquewhite;
+    border: none;
+}
+
+.card-title {
+    width: 100%;
+    height: 25px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #940c34;
+    border: none;
+}
+
+.card-course {
+    width: 100%;
+    height: 35px;
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    border: none;
+    color: #FFF;
+    background: rgb(228, 116, 140);
+    background: linear-gradient(90deg, rgba(228, 116, 140, 1) 0%, rgba(148, 4, 52, 1) 100%);
+}
+
+.card-speechname {
+    width: 100%;
+    height: 130px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    border: none;
+    background: rgb(228, 116, 140);
+    background: linear-gradient(90deg, rgba(228, 116, 140, 1) 0%, rgba(148, 4, 52, 1) 100%);
+}
+
+.card-speechname p {
+    width: 95%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.card-local {
+    padding-left: 8.5%;
+    width: 100%;
+    height: 50px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    gap: 75px;
+    background-color: #940c34;
+    border: none;
+    color: #FFF;
+}
+
+.card-info {
+    width: 100%;
+    height: 150px;
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+
+.speech-info {
+    width: 40%;
+    height: 100%;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    background-color: #940c34;
+    color: #fff;
+    border: none;
+}
+
+.speech-info p {
+    width: 95%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.speech-even-subscription {
+    width: 60%;
+}
+
+.speech-resume {
+    width: 100%;
+    height: 60%;
+    background-color: aquamarine;
+    text-align: center;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #ecd4dc;
+    border: none;
+}
+
+.speech-resume::-webkit-scrollbar {
+    width: 0em;
+}
+
+.speech-resume::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.speech-resume p {
+    width: 85%;
+    height: 100%;
+    font-size: 1.3rem;
+    padding-top: 9%;
+}
+
+.speech-button {
+    width: 100%;
+    height: 40%;
+}
+
+.speech-button button{
+    width: 100%;
+    height: 100%;
+    border: solid 1px rgb(50, 50, 191);
+    color: rgb(50, 50, 191);
+    background-color: #FFF;
+}
+
+.speech-button button:hover {
+    color: #FFF;
+    background-color: green;
+    border: none;
+}
+
+div {
+    border: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    color: black;
+    width: 50px;
+    height: 50px;
+    font-size: 5rem;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.close-button:hover {
+    color: #FFF;
+    background-color: rgb(251, 88, 88);
+}

@@ -250,6 +250,9 @@ main {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
+    .input-container input {
+        width: 23rem;
+    }
 
     #payment-details img {
         height: 20rem;

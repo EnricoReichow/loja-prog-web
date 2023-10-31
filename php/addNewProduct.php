@@ -3,8 +3,8 @@
     $productName = $_POST['new-product-name'];
     $productPrice = $_POST['new-product-price'];
 
-    //$con = mysqli_connect('localhost:3306', 'root', 'Futebol300904', 'lojaprogweb');
-    $con = mysqli_connect('localhost', 'root', '170805Gabi', 'lojaprogweb');
+    $con = mysqli_connect('localhost:3306', 'root', 'Futebol300904', 'lojaprogweb');
+    // $con = mysqli_connect('localhost', 'root', '170805Gabi', 'lojaprogweb');
 
     $photo = $_FILES["new-product-image"];
 
