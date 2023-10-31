@@ -5,8 +5,8 @@ Curso: Bacharelado em Ciência da Computação;<br>
 Estudantes: Enrico Bernz Reichow Santos, Gabriel Marques Simini, Henrique de Oliveira Godoy;<br>
 Turma: 2B (Segundo Período);<br>
 Componente Acadêmico: Programação WEB;<br>
-Professor: Jose Eduardo Nunes Lino.
-<br>
+Professor: Jose Eduardo Nunes Lino.<br>
+
 Descrição: A ideia do projeto era programar um site de uma Loja, com o tema escolhido pelos proprios estudantes/desenvolvedores. O site , na perspectiva do usuário, deveria ter uma página de produtos, uma página de carrinho e uma página de finalizar a compra. Já na perspectiva do Administrador, deveria ter a opção de Adicionar um novo produto, e excluir um produto.<br>
 <br>
 Considerações do Grupo: Fizemos o projeto, com base nos ensinamentos absorvidos em classes e utilizamos as linguagens ensinadas pelo Professor (HTML, CSS, JavaScript, PHP, SQL).<br>
