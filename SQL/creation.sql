@@ -6,7 +6,7 @@ CREATE TABLE `lojaprogweb`.`products` (
   `price` FLOAT NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE,
-  UNIQUE INDEX `productName_UNIQUE` (`productName` ASC) VISIBLE);
+  #UNIQUE INDEX `productName_UNIQUE` (`productName` ASC) VISIBLE);
 
 INSERT INTO products (productName, price)
 VALUES ('Raquete Vermelha Wilson', 959.99);
@@ -65,6 +65,7 @@ SELECT * FROM adm;
 CREATE TABLE `lojaprogweb`.`carrinhodecompras` (
   `idItemNoCarrinho` INT NOT NULL AUTO_INCREMENT,
   `idProduct` INT NOT NULL,
+  `productName` VARCHAR(200),
   PRIMARY KEY (`idItemNoCarrinho`),
   UNIQUE INDEX `idItemNoCarrinho_UNIQUE` (`idItemNoCarrinho` ASC) VISIBLE,
   FOREIGN KEY (`idProduct`) REFERENCES `lojaprogweb`.`products` (`id`),

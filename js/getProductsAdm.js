@@ -4,28 +4,38 @@ window.onload = async function () {
     });
 
     var dados = await resultado.json();
-    console.log(resultado)
+    console.log(resultado);
+    const produtosUnicos = {};
 
     for (var i = 0; i < dados.length; i++) {
+        const produto = dados[i];
 
-        var template =
-            `<div class="product-content">
-            <img src="../../img/${dados[i].id}.png" alt="raquete-de-tennis-vermelha" id="img-1">
-            <div class="product-info">
-                <h4 class="product-name" id="price-item-1">${dados[i].productName}</h4>
-                <h4 class="price" id="add-item-1">R$${parseFloat(dados[i].price).toFixed(2)}</h4>
-            </div>
-        </div>`;
+        //LOGICA FEITA PARA O ESTOQUE, DE FORMA QUE SÓ TENHA UM CARD POR NOME DE PRODUTO
+        if (!produtosUnicos[produto.productName]) {
+            produtosUnicos[produto.productName] = true;
 
-        document.querySelector(".main-grid").innerHTML += template;
+            var template =
+                `<div class="product-content">
+                    <img src="../../img/${dados[i].id}.png" alt="raquete-de-tennis-vermelha" id="img-1">
+                    <div class="product-info">
+                        <h4 class="product-name" id="price-item-1">${dados[i].productName} (x${dados[i].quantidade})</h4>
+                        <h4 class="price" id="add-item-1">R$${parseFloat(dados[i].price).toFixed(2)}</h4>
+                    </div>
+                </div>`;
+
+            document.querySelector(".main-grid").innerHTML += template;
+        }
     }
 }
+
+
 
 document.getElementById("add-new-product").addEventListener("click", function (event) {
     event.preventDefault();
 });
 
 function updateProductList(products) {
+
     const mainGrid = document.querySelector(".main-grid");
     mainGrid.innerHTML = "";
 
@@ -34,19 +44,26 @@ function updateProductList(products) {
         return;
     }
 
+    const produtosUnicos = {};
+
     for (let i = 0; i < products.length; i++) {
         const product = products[i];
 
-        const template = `
-            <div class="product-content">
-                <img src="../../img/${product.id}.png" alt="${product.productName}" id="img-${i}">
-                <div class="product-info">
-                    <h4 class="product-name" id="price-item-${i}">${product.productName}</h4>
-                    <h4 class="price" id="add-item-${i}">R$${parseFloat(product.price).toFixed(2)}</h4>
-                </div>
-            </div>`;
+        //LOGICA FEITA PARA O ESTOQUE, DE FORMA QUE SÓ TENHA UM CARD POR NOME DE PRODUTO
+        if (!produtosUnicos[product.productName]) {
+            produtosUnicos[product.productName] = true;
 
-        mainGrid.innerHTML += template;
+            const template = `
+                <div class="product-content">
+                    <img src="../../img/${product.id}.png" alt="${product.productName}" id="img-${i}">
+                    <div class="product-info">
+                        <h4 class="product-name" id="price-item-${i}">${product.productName} (x${product.quantidade})</h4>
+                        <h4 class="price" id="add-item-${i}">R$${parseFloat(product.price).toFixed(2)}</h4>
+                    </div>
+                </div>`;
+
+            mainGrid.innerHTML += template;
+        }
     }
 }
 

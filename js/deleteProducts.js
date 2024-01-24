@@ -7,23 +7,32 @@ window.onload = async function () {
     var total = 0;
     console.log(resultado);
 
+    const produtosUnicos = {};
+
     for (var i = 0; i < dados.length; i++) {
-        var template =
-            `<div class="product-content">
+        const produto = dados[i];
+
+        //LOGICA FEITA PARA O ESTOQUE, DE FORMA QUE SÓ TENHA UM CARD POR NOME DE PRODUTO
+        if (!produtosUnicos[produto.productName]) {
+            produtosUnicos[produto.productName] = true;
+
+            var template =
+                `<div class="product-content">
             <img src="../../img/${dados[i].id}.png" alt="raquete-de-tennis-vermelha" id="img-1">
             <div class="product-info">
-                <h4 class="product-name" id="price-item-1">${dados[i].productName}</h4>
+                <h4 class="product-name" id="price-item-1">${dados[i].productName} (x${dados[i].quantidade})</h4>
                 <h4 class="price" id="add-item-1">R$${parseFloat(dados[i].price).toFixed(2)}</h4>
             </div>
             <div class="product-card">
                 <div class="product-add-cart">
-                <button class="add-btn" name="idProduto" id="add-item-1" onclick="deleteProduct(${dados[i].id})">Remover</button>
+                <button class="add-btn" name="idProduto" id="add-item-1" onclick="deleteProduct('${dados[i].productName}')">Remover</button>
                 </div>
             </div>
         </div>`;
 
-        document.querySelector(".main-grid").innerHTML += template;
+            document.querySelector(".main-grid").innerHTML += template;
 
+        }
     }
 }
 
@@ -36,33 +45,40 @@ function updateProductList(products) {
         return;
     }
 
+    const produtosUnicos = {};
+
     for (let i = 0; i < products.length; i++) {
         const product = products[i];
 
-        const template = `
+        //LOGICA FEITA PARA O ESTOQUE, DE FORMA QUE SÓ TENHA UM CARD POR NOME DE PRODUTO
+        if (!produtosUnicos[product.productName]) {
+            produtosUnicos[product.productName] = true;
+
+            const template = `
             <div class="product-content">
                 <img src="../../img/${product.id}.png" alt="${product.productName}" id="img-${i}">
                 <div class="product-info">
-                    <h4 class="product-name" id="price-item-${i}">${product.productName}</h4>
+                    <h4 class="product-name" id="price-item-${i}">${product.productName} (x${product.quantidade})</h4>
                     <h4 class="price" id="add-item-${i}">R$${parseFloat(product.price).toFixed(2)}</h4>
                 </div>
                 <div class="product-card">
                     <div class="product-add-cart">
-                    <button class="add-btn" name="idProduto" id="add-item-1" onclick="deleteProduct(${product.id})">Remover</button>
+                    <button class="add-btn" name="idProduto" id="add-item-1" onclick="deleteProduct('${product.productName}')">Remover</button>
                     </div>
                 </div>
             </div>`;
 
-        mainGrid.innerHTML += template;
+            mainGrid.innerHTML += template;
+        }
     }
 }
 
-async function deleteProduct(id) {
-
-    console.log(id);
+async function deleteProduct(productName) {
+   
+    console.log(productName);
 
     const data = new FormData();
-    data.append('id', id);
+    data.append('productName', productName);
 
     try {
         const resultado = await fetch("../../php/deleteProductAdm.php", {
